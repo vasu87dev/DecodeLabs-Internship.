@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecodeLabs - Responsive Layout Architecture</title>
+  <!-- Montserrat (Headlines) & Open Sans (Body) fonts. Weight limits: 400, 600, 700 (Max 3 weights) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Wayfinding Nav Container -->
+  <header class="main-header">
+    <div class="logo">DecodeLabs</div>
+    <nav class="nav-links">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Projects</a>
+      <button class="btn-primary">Get Started</button>
+    </nav>
+    <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="badge">Digital Craftsmanship</span>
+      <h1>Build the Future</h1>
+      <p>Master the art of structural responsiveness and responsive UI layouts before scaling backends.</p>
+    </div>
+  </section>
+
+  <!-- Core Layout Wrapper -->
+  <div class="layout-wrapper">
+    <!-- Sidebar Navigation / Controls -->
+    <aside class="sidebar">
+      <h3>Interface Control</h3>
+      <ul class="sidebar-menu">
+        <li><a href="#" class="active">Overview</a></li>
+        <li><a href="#">Design Tokens</a></li>
+        <li><a href="#">Grid Blueprint</a></li>
+        <li><a href="#">Accessibility Log</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content Stream -->
+    <main class="main-content">
+      <section class="grid-container">
+        <!-- Distributable Content Units (Articles) -->
+        <article class="card">
+          <div class="card-image-placeholder">Icon</div>
+          <h2>Semantic Infrastructure</h2>
+          <p>Proper HTML5 landmarks ensure screen readers and search bots can index your workspace effectively.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-image-placeholder">Icon</div>
+          <h2>Mobile-First Scale</h2>
+          <p>Styles are declared initially for compact viewports and scale up elegantly via media queries.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-image-placeholder">Icon</div>
+          <h2>Universal Access</h2>
+          <p>Carefully managed color contrasts and readable type pairings honor fundamental WCAG standards.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <!-- Terminal Metadata Footer -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 DecodeLabs Internship Program. Built with structural integrity.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal interaction logic to toggle mobile menus
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
